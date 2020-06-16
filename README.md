@@ -4,6 +4,8 @@ A minimal setup to run Buzz scripts within the ARGoS simulator
 # Prerequisites
 In order for this code to work properly, ARGoS and Buzz should already be installed on your computer. The installation instructions for both ARGoS and Buzz can be found here: https://the.swarming.buzz/wiki/doku.php?id=buzz_argos
 
+_Make sure you install ARGoS prior to installing Buzz, as recommended in the documentation._
+
 There is no need to follow the instructions on how to define an ARGoS experiment file, since this boilerplate already has one. You might want to learn the syntax, though.
 
 This repository was built and tested on Ubuntu 20.04 LTS.
