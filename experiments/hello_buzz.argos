@@ -14,11 +14,10 @@
 			<sensors>
 				<range_and_bearing implementation="medium" medium="rab" show_rays="true" noise_std_dev="0" />
 			</sensors>
-			<params bytecode_file="hexagon.bo" debug_file="hexagon.bdb" />
+			<params bytecode_file="buzz_code/square/square.bo" debug_file="buzz_code/square/square.bdb" />
 		</buzz_controller_footbot>
 	</controllers>
 	<arena size="6, 6, 1" center="0,0,0.5">
-		<!-- Place a foot-bot in the arena -->
 		<foot-bot id="fb0" rab_data_size="100">
 			<body position="-0.25,-0.25,0" orientation="0,0,0" />
 			<controller config="bcf" />
@@ -33,14 +32,6 @@
 		</foot-bot>
 		<foot-bot id="fb3" rab_data_size="100">
 			<body position="0.5,0,0" orientation="0,0,0" />
-			<controller config="bcf" />
-		</foot-bot>
-		<foot-bot id="fb4" rab_data_size="100">
-			<body position="-0.5,0,0" orientation="0,0,0" />
-			<controller config="bcf" />
-		</foot-bot>
-		<foot-bot id="fb5" rab_data_size="100">
-			<body position="1,0.5,0" orientation="0,0,0" />
 			<controller config="bcf" />
 		</foot-bot>
 	</arena>
