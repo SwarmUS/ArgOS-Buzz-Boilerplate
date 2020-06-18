@@ -1,0 +1,1 @@
+buzz_make(hexagon.bzz)
