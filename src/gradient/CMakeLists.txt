@@ -1,1 +1,0 @@
-buzz_make(gradient.bzz)
