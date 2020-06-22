@@ -1,4 +1,9 @@
+build/*
 
-*.bo
+#vscode
+.vscode/*
+# Local History for Visual Studio Code
+.history/
 
-*.bdb
+#clion
+.idea/*

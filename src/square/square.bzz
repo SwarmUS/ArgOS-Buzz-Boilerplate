@@ -1,6 +1,6 @@
 # We need this for 2D vectors
 # Make sure you pass the correct include path to "bzzc -I <path1:path2> ..."
-include "include/vec2.bzz"
+include "vec2.bzz"
 
 # Lennard-Jones parameters
 TARGET_KIN     = 283.0
