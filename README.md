@@ -11,7 +11,7 @@ The `experiments` folder contains the ARGoS experiment files.
 ArgOS-Buzz-Boilerplate
 |-- build/
 |-- experiments/
-|   |-- hello_buzz.argos            # Example ARGoS experiment file which uses some Buzz binary code
+|   |-- square.argos            # Example ARGoS experiment file which uses some Buzz binary code
 |-- src/
 |   |-- CMakeLists.txt
 |   |-- square/
@@ -40,21 +40,21 @@ make
 
 This generates two files for each buzz script : a `.bo` file and a `.bdb` file. Both these files should be referenced in your `.argos` experiment file, upon declaring your robot controllers. You must specify the files in the `<params>` tag.
 
-For example, in the `hello_buzz.argos` experiment file, the files are specified at the line
+For example, in the `square.argos` experiment file, the files are specified at the line
 
 ```xml
 <params bytecode_file="build/square/square.bo" debug_file="build/square/square.bdb" />
 ```
 
 # How to start the "hello_buzz" experiment
-The `hello_buzz.argos` file located in the `experiments` folder contains some minimal configuration which runs the basic Buzz examples found in `src/`.
+The `square.argos` file located in the `experiments` folder contains some minimal configuration which runs the basic Buzz examples found in `src/`.
 
-By default, `hello_buzz.argos` is set to spawn 4 Buzz Foot-Bots controllers programmed with the `square.bzz` example. However, you can edit the experiment file to load any compiled Buzz bytecode on your robot controllers.
+By default, `square.argos` is set to spawn 4 Buzz Foot-Bots controllers programmed with the `square.bzz` example. However, you can edit the experiment file to load any compiled Buzz bytecode on your robot controllers.
 
 Assuming you have already built the project, you can start the experiment with
 
 ```
-$ argos3 -c experiments/hello_buzz.argos
+$ argos3 -c experiments/square.argos
 ```
 
 The ARGoS simulator should render 4 robots on a map. Click `Play` and they should move to create a square.
